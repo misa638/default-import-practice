@@ -1,4 +1,5 @@
-import log, { name } from "./user.js";
+import { default as chu } from "./pokemon/index.js";
 
-log(name);
-document.body.textContent = name;
+//importでdefaultを識別氏で使えない
+//予約語(if,class..などの役割が決められている物)は識別氏では使えない
+document.body.textContent = chu;
